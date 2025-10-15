@@ -1,0 +1,220 @@
+
+   body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #1E1B2E; /* фон блока */
+      color: #fff;
+    }
+
+    .reasons {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .reasons h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #E0449F;
+      margin-bottom: 10px;
+    }
+
+    .reasons h3 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 60px;
+    }
+
+    .reasons-content {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .reasons-list {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .reason {
+      text-align: left;
+      max-width: 280px;
+    }
+
+    .reason h4 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #9C6CFF; /* фиолетовый */
+      margin-bottom: 12px;
+    }
+
+    .reason p {
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #D6D6D6;
+      margin: 0;
+    }
+
+    .reasons img {
+      max-width: 320px;
+      height: auto;
+      display: block;
+    }
+
+    /* адаптив */
+    @media (max-width: 992px) {
+      .reasons-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .reasons-list {
+        align-items: center;
+        text-align: center;
+      }
+
+      .reason {
+        text-align: center;
+      }
+    }
+	
+	/* Контейнер 12 колонок */
+    .contact-section {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+    }
+
+    .form-block {
+      grid-column: span 6;
+    }
+
+    .contacts-block {
+      grid-column: span 6;
+    }
+
+    .form-title, .contacts-title {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #ff3d8a 0%, #8b5cf6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .form-box {
+      border: 2px solid transparent;
+      border-radius: 12px;
+      background: linear-gradient(#1F1B2E, #1F1B2E) padding-box,
+                  linear-gradient(90deg, #ff3d8a, #8b5cf6) border-box;
+      padding: 30px;
+    }
+
+    .form-box input, 
+    .form-box textarea {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 12px 0;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .form-box input:focus, 
+    .form-box textarea:focus {
+      outline: none;
+      border-bottom: 1px solid #ff3d8a;
+    }
+
+    /* Кнопка: прозрачная с градиентной рамкой */
+    .form-box button {
+      display: inline-block;
+      background: transparent;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      padding: 14px 40px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+      background-image: linear-gradient(#1F1B2E, #1F1B2E),
+                        linear-gradient(90deg, #ff3d8a, #8b5cf6);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      transition: 0.3s;
+    }
+
+    .form-box button:hover {
+      background-image: linear-gradient(90deg, #ff3d8a, #8b5cf6);
+      color: #fff;
+    }
+
+    /* Список контактов */
+    .contacts-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 16px;
+    }
+
+    .contacts-list a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contacts-list a:hover {
+      color: #ff3d8a;
+    }
+
+    .contacts-list img {
+      width: 28px;
+      height: 28px;
+    }
+
+    /* Отступы между блоками */
+    .block-spacing {
+      margin-bottom: 40px;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 20px;
+      color: #aaa;
+    }
+
+    @media (max-width: 991px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .form-block, .contacts-block {
+        grid-column: span 1;
+      }
+      .form-title, .contacts-title {
+        font-size: 22px;
+        text-align: center;
+      }
+      .contacts-list {
+        align-items: center;
+      }
+    }
+	
