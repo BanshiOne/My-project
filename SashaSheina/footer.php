@@ -10,6 +10,7 @@
 		  УНП: AC3288415
 		</p>
 	  </div>
-	</div>
+
 	<?php wp_footer(); ?>
+
   </footer>
